@@ -9,3 +9,6 @@ function addTask() {
 function deleteTask(button) {
     button.parentElement.remove();
 }
+function clearTasks(){
+    document.getElementById("list").innerHTML="";
+}
