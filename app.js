@@ -12,3 +12,7 @@ function deleteTask(button) {
 function clearTasks(){
     document.getElementById("list").innerHTML="";
 }
+function updateTaskCount() {
+    const taskCount = document.querySelectorAll("#taskList li").length;
+    console.log(`Total tasks: ${taskCount}`);
+}
