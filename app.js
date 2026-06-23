@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function addTask() {
 
     let task = document.getElementById("task").value;
@@ -13,8 +14,19 @@ function addTask() {
             Edit
         </button>
     `;
+=======
+function addTask(){
+
+    let task =
+    document.getElementById("task").value.toUpperCase();
+
+    let li=document.createElement("li");
+
+    li.innerHTML = task;
+>>>>>>> feature/improve-task-display
 
     document.getElementById("list").appendChild(li);
+}
 }
 function completeTask(task) {
     task.classList.toggle("completed");
