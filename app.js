@@ -40,8 +40,6 @@ function editTask(button){
     selectedTask.innerText;
 
 }
-
-
 function saveEdit(){
 
     let newText =
