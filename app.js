@@ -6,3 +6,6 @@ function addTask() {
 
     document.getElementById("list").appendChild(li);
 }
+function deleteTask(button) {
+    button.parentElement.remove();
+}
