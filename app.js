@@ -48,5 +48,9 @@ function saveEdit(){
     document.getElementById("editInput").value;
 
     selectedTask.firstChild.textContent = newText;
+    if(newText.trim() === ""){
+    alert("Task cannot be empty");
+    return;
+}
 
 }
