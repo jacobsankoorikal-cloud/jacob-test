@@ -6,6 +6,9 @@ function addTask() {
 
     document.getElementById("list").appendChild(li);
 }
+function completeTask(task) {
+    task.classList.toggle("completed");
+}
 function deleteTask(button) {
     button.parentElement.remove();
 }
