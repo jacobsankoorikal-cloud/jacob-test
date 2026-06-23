@@ -9,4 +9,6 @@ h1 {
 .completed {
     text-decoration: line-through;
     color: gray;
+    opacity: 0.6;
+    transition: 0.3s;
 }
