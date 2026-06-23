@@ -1,8 +1,18 @@
 function addTask() {
+
     let task = document.getElementById("task").value;
 
     let li = document.createElement("li");
-    li.innerHTML = task;
+
+    li.innerHTML = `
+        <span onclick="completeTask(this)">
+            ${task}
+        </span>
+
+        <button onclick="editTask(this)">
+            Edit
+        </button>
+    `;
 
     document.getElementById("list").appendChild(li);
 }
@@ -18,4 +28,25 @@ function clearTasks(){
 function updateTaskCount() {
     const taskCount = document.querySelectorAll("#taskList li").length;
     console.log(`Total tasks: ${taskCount}`);
+}
+let selectedTask = null;
+
+
+function editTask(button){
+
+    selectedTask = button.parentElement;
+
+    document.getElementById("editInput").value =
+    selectedTask.innerText;
+
+}
+
+
+function saveEdit(){
+
+    let newText =
+    document.getElementById("editInput").value;
+
+    selectedTask.firstChild.textContent = newText;
+
 }
