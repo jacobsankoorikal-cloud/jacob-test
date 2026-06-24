@@ -12,3 +12,7 @@ h1 {
     opacity: 0.6;
     transition: 0.3s;
 }
+.dark {
+    background-color: #222;
+    color: white;
+}
